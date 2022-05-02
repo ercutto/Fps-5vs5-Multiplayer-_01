@@ -13,6 +13,7 @@ public class Move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        card = GetComponent<Players>().Cards;
         isFast = false;
         speed = card.speed;
         fastSpeed = card.fastSpeed;

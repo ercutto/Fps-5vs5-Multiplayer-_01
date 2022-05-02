@@ -11,6 +11,7 @@ public class PlayerColliders : MonoBehaviour
     
     void Start()
     {
+        cards = GetComponent<Players>().Cards;
         players = GetComponent<Players>();
         maxHealth = cards.health;
         currentHealth = maxHealth;
@@ -23,9 +24,28 @@ public class PlayerColliders : MonoBehaviour
     }
     public void Damage(float damage)
     {
-        currentHealth -= damage;
+        if (currentHealth<=0)
+        {
+            currentHealth = 0;
+        }
+        else
+        {
+            currentHealth -= damage;
+        }
+        
         players.currentHealthHandler(currentHealth);
         Debug.Log(currentHealth);
         
+    }
+    public void Heal(float heal)
+    {
+        currentHealth += heal;
+        if (currentHealth>=maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        
+
+        players.currentHealthHandler(currentHealth);
     }
 }
