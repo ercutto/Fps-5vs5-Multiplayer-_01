@@ -19,7 +19,6 @@ public class PhysicsCont : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cards = GetComponent<Players>().Cards;
         controller = GetComponent<CharacterController>();
         jumpSeed = cards.JumpSpeed;
     }
