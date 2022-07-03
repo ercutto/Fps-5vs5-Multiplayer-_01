@@ -106,7 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5553757711604482363}
   m_Layer: 0
-  m_Name: Pistol
+  m_Name: Revolver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,7 +125,7 @@ Transform:
   m_Children:
   - {fileID: 1098850303216439609}
   - {fileID: 8383182986824580718}
-  - {fileID: 1144130253406998557}
+  - {fileID: 4222535274245851714}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -254,7 +254,7 @@ Transform:
   m_Father: {fileID: 5553757711604482363}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &606434651223324662
+--- !u!1001 &4401085598795197865
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -283,11 +283,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2c3ba6c20b5b05c47a9f6f775d52e229, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.87
+      value: -0.78
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2c3ba6c20b5b05c47a9f6f775d52e229, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.05
+      value: 2.08
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2c3ba6c20b5b05c47a9f6f775d52e229, type: 3}
       propertyPath: m_LocalRotation.w
@@ -323,8 +323,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c3ba6c20b5b05c47a9f6f775d52e229, type: 3}
---- !u!4 &1144130253406998557 stripped
+--- !u!4 &4222535274245851714 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2c3ba6c20b5b05c47a9f6f775d52e229, type: 3}
-  m_PrefabInstance: {fileID: 606434651223324662}
+  m_PrefabInstance: {fileID: 4401085598795197865}
   m_PrefabAsset: {fileID: 0}

@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 1603940442663397723}
   - component: {fileID: 7120066801770351172}
   - component: {fileID: 2986611155838375330}
+  - component: {fileID: 917191874988346297}
   m_Layer: 11
   m_Name: HeadCollider
   m_TagString: Untagged
@@ -168,6 +169,22 @@ MonoBehaviour:
   damageMultiplier: 2
   Player: {fileID: 0}
   playerColliders: {fileID: 0}
+--- !u!54 &917191874988346297
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5593857243039313571}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6084020033329636187
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,6 +196,7 @@ GameObject:
   - component: {fileID: 4814435975555343095}
   - component: {fileID: 2784654719532075202}
   - component: {fileID: 7165164798809527855}
+  - component: {fileID: 8729627831305913565}
   m_Layer: 11
   m_Name: BodyCollider
   m_TagString: Untagged
@@ -228,6 +246,22 @@ MonoBehaviour:
   damageMultiplier: 0.5
   Player: {fileID: 0}
   playerColliders: {fileID: 0}
+--- !u!54 &8729627831305913565
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6084020033329636187}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6486841760243854563
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,6 +273,7 @@ GameObject:
   - component: {fileID: 3067587124656996438}
   - component: {fileID: 5147445475029400665}
   - component: {fileID: 8344367323991587155}
+  - component: {fileID: 6953356145803164167}
   m_Layer: 11
   m_Name: ArmCollider
   m_TagString: Untagged
@@ -288,6 +323,22 @@ MonoBehaviour:
   damageMultiplier: 0.1
   Player: {fileID: 0}
   playerColliders: {fileID: 0}
+--- !u!54 &6953356145803164167
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6486841760243854563}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7797299294793071749
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,6 +350,7 @@ GameObject:
   - component: {fileID: 6965660007005000777}
   - component: {fileID: 2831519945499523931}
   - component: {fileID: 2356124562265652587}
+  - component: {fileID: 3964783675497761379}
   m_Layer: 11
   m_Name: ArmCollider
   m_TagString: Untagged
@@ -348,6 +400,22 @@ MonoBehaviour:
   damageMultiplier: 0.1
   Player: {fileID: 0}
   playerColliders: {fileID: 0}
+--- !u!54 &3964783675497761379
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7797299294793071749}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8034808600673646307
 GameObject:
   m_ObjectHideFlags: 0
@@ -950,6 +1018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 8034808601908906948}
+  gunPrefab: {fileID: 0}
   card: {fileID: 11400000, guid: 4530ca3305ef2ae489d884180a95e899, type: 2}
   speed: 0
   isFast: 0
@@ -1003,6 +1072,7 @@ GameObject:
   - component: {fileID: 7004957946467680342}
   - component: {fileID: 6761469478501340916}
   - component: {fileID: 2851063489027646544}
+  - component: {fileID: 3902769935915792928}
   m_Layer: 11
   m_Name: 'LegCollider '
   m_TagString: Untagged
@@ -1052,6 +1122,22 @@ MonoBehaviour:
   damageMultiplier: 0.2
   Player: {fileID: 0}
   playerColliders: {fileID: 0}
+--- !u!54 &3902769935915792928
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8145804886158320575}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8341518576719823782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,6 +1149,7 @@ GameObject:
   - component: {fileID: 5385090341643037615}
   - component: {fileID: 727979924549191476}
   - component: {fileID: 4862647710200156060}
+  - component: {fileID: 761521776510990637}
   m_Layer: 11
   m_Name: 'LegCollider '
   m_TagString: Untagged
@@ -1112,6 +1199,22 @@ MonoBehaviour:
   damageMultiplier: 0.2
   Player: {fileID: 0}
   playerColliders: {fileID: 0}
+--- !u!54 &761521776510990637
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8341518576719823782}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &5962204600259471396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1353,17 +1456,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4430661326742847315 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6666796912694021813, guid: 9315272d63bab9549a2be6eb26b955b5, type: 3}
-  m_PrefabInstance: {fileID: 7059928396924269030}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4430661328607851091 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6666796912477602741, guid: 9315272d63bab9549a2be6eb26b955b5, type: 3}
@@ -1384,6 +1476,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4430661326742847315 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6666796912694021813, guid: 9315272d63bab9549a2be6eb26b955b5, type: 3}
+  m_PrefabInstance: {fileID: 7059928396924269030}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &8376668002783985740

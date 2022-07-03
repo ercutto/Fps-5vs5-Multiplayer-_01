@@ -5,6 +5,7 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {   [SerializeField]
     private CharacterController controller;
+    public GameObject gunPrefab;
     public Cards card;
     [SerializeField]
     protected float speed;
