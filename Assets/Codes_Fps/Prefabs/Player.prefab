@@ -263,7 +263,11 @@ MonoBehaviour:
   repeatTime: 0
   range: 0
   gunPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 0}
   gunName: 
+  spawnPos: {fileID: 0}
+  audioSource: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!114 &2606412366860501043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0995baa0876a5ba4998c0d6f208bab71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rayPosObject: {fileID: 0}
   rayPos: {fileID: 2606412368816568882}
   cam: {fileID: 2606412368746106387}
   bullet: {fileID: 3274314153841052315, guid: f714ad265a6e3204f9ae116caa747800, type: 3}
@@ -687,7 +692,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 500
+  far clip plane: 1000
   field of view: 60
   orthographic: 0
   orthographic size: 5
