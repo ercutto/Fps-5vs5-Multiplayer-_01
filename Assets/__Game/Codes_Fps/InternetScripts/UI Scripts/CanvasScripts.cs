@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using Photon.Pun;
 using Photon.Realtime;
 
-public class CanvasScripts : MonoBehaviour
+public class CanvasScripts : MonoBehaviourPunCallbacks
 {
     //Objects to set active or false
     [SerializeField]
@@ -16,18 +16,22 @@ public class CanvasScripts : MonoBehaviour
     [SerializeField]
     private GameObject currentRoomCanvas;
     [SerializeField]
-    private GameObject CostumizeButton;
+    private GameObject CustomizeButton;
     [SerializeField]
     private GameObject playerListing;
     [SerializeField]
     private GameObject leaveRoomMenu;
     [SerializeField]
-    private GameObject Costumize;
+    private GameObject Customize;
     public int SetMaxPlayer = 6;
-
+    //roomListing
     public RoomInfo RoomInfo { get; private set; }
     [SerializeField]
     private TextMeshProUGUI roomText;
+    [SerializeField]
+    private Transform content;//Instantiateing room name into scrollview content!
+    [SerializeField]
+    private GameObject roomNamebox;
 
     //Variables
     [SerializeField]
@@ -41,6 +45,11 @@ public class CanvasScripts : MonoBehaviour
     public void OnClick_JoinToRoom()
     {
         PhotonNetwork.JoinRoom(RoomInfo.Name);
+    }
+    public override void OnJoinedRoom()
+    {
+        currentRoomCanvas.SetActive(true);
+        content.DestroyChilderen();
     }
     #endregion
     #region Creating room
@@ -57,5 +66,5 @@ public class CanvasScripts : MonoBehaviour
     }
     //We may add random room options later on!
     #endregion
-
+   
 }
