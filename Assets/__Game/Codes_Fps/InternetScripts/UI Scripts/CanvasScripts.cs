@@ -25,11 +25,25 @@ public class CanvasScripts : MonoBehaviour
     private GameObject Costumize;
     public int SetMaxPlayer = 6;
 
+    public RoomInfo RoomInfo { get; private set; }
+    [SerializeField]
+    private TextMeshProUGUI roomText;
+
     //Variables
     [SerializeField]
     private Text roomName;
-
-    //Buttons
+    #region Room Listing Functions
+    public void SetRoomInfo(RoomInfo roomInfo)
+    {
+        RoomInfo = roomInfo;
+        roomText.text = RoomInfo.MaxPlayers + " P- " + roomInfo;
+    }
+    public void OnClick_JoinToRoom()
+    {
+        PhotonNetwork.JoinRoom(RoomInfo.Name);
+    }
+    #endregion
+    #region Creating room
     public void OnClick_CreateRoom()
     {
         if (!PhotonNetwork.IsConnected)
@@ -41,6 +55,7 @@ public class CanvasScripts : MonoBehaviour
         options.MaxPlayers = (byte)SetMaxPlayer;
         PhotonNetwork.JoinOrCreateRoom(roomName.text, options, TypedLobby.Default);
     }
-    //We may add random roo options later on!
+    //We may add random room options later on!
+    #endregion
 
 }
