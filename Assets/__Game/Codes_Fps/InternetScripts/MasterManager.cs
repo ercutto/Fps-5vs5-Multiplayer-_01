@@ -15,7 +15,7 @@ public class MasterManager : ScriptableObjectSingleton<MasterManager>
     private List<NetworkPrefab> _networkedPrefabs = new List<NetworkPrefab>();
 
     public static Cards card = null;
-    public static GunsStat gunsStat = null;
+    public static GunsStat gunStat = null;
     public static int nextPlayersTeam;
 
     public static GameObject NetworkInstantiate(GameObject obj, Vector3 position, Quaternion rotatiton)
