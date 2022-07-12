@@ -10,7 +10,7 @@ public class MasterManager : ScriptableObjectSingleton<MasterManager>
 {
     [SerializeField]
     private GameSettings _gameSettings;
-    public static GameSettings gameSettings { get { return Instance._gameSettings; } }
+    public static GameSettings GameSettings { get { return Instance._gameSettings; } }
     [SerializeField]
     private List<NetworkPrefab> _networkedPrefabs = new List<NetworkPrefab>();
 

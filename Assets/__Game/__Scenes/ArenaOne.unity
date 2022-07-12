@@ -435,6 +435,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Proto_level_01
       objectReference: {fileID: 0}
+    - target: {fileID: 458229460873432739, guid: 42be555ad3da7a7498af6b5440798366, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 746805568383327020, guid: 42be555ad3da7a7498af6b5440798366, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -478,6 +482,10 @@ PrefabInstance:
     - target: {fileID: 746805568383327020, guid: 42be555ad3da7a7498af6b5440798366, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991991878385955819, guid: 42be555ad3da7a7498af6b5440798366, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42be555ad3da7a7498af6b5440798366, type: 3}
@@ -609,6 +617,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a495bb34173f44b83fcce6cab3bfd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _prefab: {fileID: 8034808601908906950, guid: ff039d8c29116d5428753615a55efd48, type: 3}
+  _redTeam: {fileID: 8034808601908906950, guid: 6677a53401787ee4d9c6956684124870, type: 3}
+  bullet: {fileID: 3274314153841052315, guid: f714ad265a6e3204f9ae116caa747800, type: 3}
+  SelectedCard: {fileID: 0}
+  single: []
+  blueTeam: []
+  redTeam: []
+  FinalSpawnPos: {fileID: 0}
+  gun: {fileID: 0}
 --- !u!4 &2110030234
 Transform:
   m_ObjectHideFlags: 0

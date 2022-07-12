@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using UnityEngine.UI;
 
-public class Shoot : MonoBehaviour//Pun
+public class Shoot : MonoBehaviourPun
 {
 
-   /* public Players players;
+    public Players players;
     public GameObject bullet;
     public int bulletCapacity;
     private float reloadTime;
@@ -76,5 +78,5 @@ public class Shoot : MonoBehaviour//Pun
         bulletCapacity = players.gunCapacity;
         bulletText.text = bulletCapacity.ToString();
         Clicked = bulletCapacity;
-    }*/
+    }
 }
