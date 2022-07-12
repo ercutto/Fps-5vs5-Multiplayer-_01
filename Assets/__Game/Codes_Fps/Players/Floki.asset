@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b9a474e03c74754eb685c4354046d76, type: 3}
-  m_Name: Ercu
+  m_Name: Floki
   m_EditorClassIdentifier: 
-  playerName: Ercu
-  GunName: Revolver
-  characterSprite: {fileID: 21300000, guid: fb5145461542bb746985f3208b3f0258, type: 3}
-  gunSprite: {fileID: 21300000, guid: 88717c23e92ed0c4583c3c8a51a53fff, type: 3}
-  health: 100
-  speed: 5
-  JumpSpeed: 7
-  fastSpeed: 11
+  playerName: Floki
+  GunName: revolver
+  characterSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  gunSprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  health: 70
+  speed: 8
+  JumpSpeed: 6
+  fastSpeed: 9
   CharacterCanvas: {fileID: 713076688445566405, guid: 9315272d63bab9549a2be6eb26b955b5, type: 3}
