@@ -65,6 +65,7 @@ public class MasterManager : ScriptableObjectSingleton<MasterManager>
                 Instance._networkedPrefabs.Add(new NetworkPrefab(results[i], path));
             }
         }
-    }
 #endif
+    }
+
 }
