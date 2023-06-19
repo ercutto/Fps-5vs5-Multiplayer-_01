@@ -117,23 +117,23 @@ public class PlayerListingMenu : MonoBehaviourPunCallbacks
 
     public void OnClick_StartGame()
     {
-        //if (PhotonNetwork.IsMasterClient)
-        //{
-        //    //for (int i = 0; i < _listing.Count; i++)
-        //    //{
-        //    //    if (_listing[i].Player!=PhotonNetwork.LocalPlayer)
-        //    //    {
-        //    //        if (!_listing[i].Ready)
-        //    //        {
-        //    //            return;
-        //    //        }
-        //    //    }
-        //    //}
-        //    PhotonNetwork.CurrentRoom.IsOpen = false;
-        //    PhotonNetwork.CurrentRoom.IsVisible = false;//Baskalari odayi görsun istersen iptal et
-        //    PhotonNetwork.LoadLevel(1);
+    //    if (PhotonNetwork.IsMasterClient)
+    //    {
+    //        for (int i = 0; i < _listing.Count; i++)
+    //        {
+    //            if (_listing[i].Player != PhotonNetwork.LocalPlayer)
+    //            {
+    //                if (!_listing[i].Ready)
+    //                {
+    //                    return;
+    //                }
+    //            }
+    //        }
+    //        PhotonNetwork.CurrentRoom.IsOpen = false;
+    //        PhotonNetwork.CurrentRoom.IsVisible = false;//Baskalari odayi görsun istersen iptal et
+    //        PhotonNetwork.LoadLevel(1);
 
-        //}
+    //    }
         //ekleme
         _characterSelectMenuController.gameObject.SetActive(true);
     }
@@ -147,6 +147,7 @@ public class PlayerListingMenu : MonoBehaviourPunCallbacks
             //base.photonView.RpcSecure("RPC_ChangeReadyStaté", RpcTarget.MasterClient,true,PhotonNetwork.LocalPlayer,_ready);
         }
     }
+    [PunRPC]
     private void RPC_ChangeReadyState(Player player, bool ready)
     {
         int index = _listing.FindIndex(x => x.Player == player);
@@ -183,4 +184,6 @@ public class PlayerListingMenu : MonoBehaviourPunCallbacks
         }
 
     }
+
+   
 }

@@ -29,6 +29,7 @@ public class NetConnection : MonoBehaviourPunCallbacks
     {
         print("Disconnected! " + cause.ToString());
     }
+   
 }
 
 
